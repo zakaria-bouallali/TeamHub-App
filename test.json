@@ -1,0 +1,47 @@
+[
+    {
+        "name": "datr",
+        "value": "G6SyabsutHdv3zc_oUuzf0BH",
+        "domain": ".facebook.com",
+        "hostOnly": false,
+        "path": "/",
+        "secure": true,
+        "httpOnly": true,
+        "sameSite": "no_restriction",
+        "session": false,
+        "firstPartyDomain": "",
+        "partitionKey": null,
+        "expirationDate": 1807875277.405,
+        "storeId": null
+    },
+    {
+        "name": "fr",
+        "value": "0JenZD8ubxI1dmBPD..BpsqQc..AAA.0.0.BpsqQc.AWevQMKf6ixHE-vLDso7GiXaDko",
+        "domain": ".facebook.com",
+        "hostOnly": false,
+        "path": "/",
+        "secure": true,
+        "httpOnly": true,
+        "sameSite": "no_restriction",
+        "session": false,
+        "firstPartyDomain": "",
+        "partitionKey": null,
+        "expirationDate": 1781091277.631,
+        "storeId": null
+    },
+    {
+        "name": "wd",
+        "value": "1519x995",
+        "domain": ".facebook.com",
+        "hostOnly": false,
+        "path": "/",
+        "secure": true,
+        "httpOnly": false,
+        "sameSite": "lax",
+        "session": false,
+        "firstPartyDomain": "",
+        "partitionKey": null,
+        "expirationDate": 1773920450,
+        "storeId": null
+    }
+]

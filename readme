@@ -1,0 +1,99 @@
+# Project Setup Guide
+
+This project can be started either locally or with Docker. The steps below are intended for anyone cloning the repository from GitHub for the first time.
+
+## Prerequisites
+
+Make sure you have installed:
+- Git
+- Node.js 20+
+- npm
+- Docker and Docker Compose
+
+## 1. Clone the repository
+
+```bash
+git clone <your-github-repo-url>
+cd dockerfile
+```
+
+## 2. Start the backend
+
+From the project root:
+
+```bash
+npm install
+npm start
+```
+
+The backend will run on:
+- http://localhost:4000
+
+You can also use:
+
+```bash
+npm run start-dev
+```
+
+## 3. Start the frontend
+
+Open a second terminal and run:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The frontend will run on:
+- http://localhost:5173
+
+## 4. Start everything with Docker (recommended)
+
+From the project root:
+
+```bash
+docker compose up --build
+```
+
+This will start:
+- Backend API on http://localhost:4000
+- Frontend on http://localhost:5173
+- MongoDB container
+- Mongo Express on http://localhost:8081
+- Redis container
+
+To stop the containers:
+
+```bash
+docker compose down
+```
+
+## 5. Optional environment file
+
+If you want to customize settings, create a `.env` file in the project root before running Docker.
+
+Example:
+
+```env
+PORT=4000
+```
+
+## 6. Useful commands
+
+```bash
+# Backend
+npm start
+npm run start-dev
+
+# Frontend
+cd frontend
+npm install
+npm run dev
+
+# Docker
+docker compose up --build
+docker compose down
+```
+
+If you encounter issues, make sure Docker is running and that no other service is already using ports 4000, 5173, 8081, or 27017.
